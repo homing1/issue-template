@@ -7,17 +7,23 @@ labels:
   - needs-triage
 body:
   - type: input
-    id: page_url
+    id: pageUrl
     validations:
       required: true
     attributes:
       label: Page URL
   - type: input
-    id: view
+    id: queryParams
     validations:
       required: true
     attributes:
-      label: Version Moniker
+      label: Page URL query parameters
+  - type: input
+    id: documentId
+    validations:
+      required: true
+    attributes:
+      label: Document Id
   - type: textarea
     id: feedback
     validations:
